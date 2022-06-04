@@ -1,0 +1,129 @@
+footer {
+  background-color: #2f303a;
+  padding: 60px 0;
+}
+footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: $primary-white-color;
+}
+.adress-info__text {
+  margin-bottom: 9px;
+
+  color: $primary-white-color;
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.adress-list__item {
+  margin-bottom: 9px;
+  color: rgba(255, 255, 255, 0.6);
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.adress-list__link {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  line-height: 1.71;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+footer .container {
+  display: flex;
+  align-items: baseline;
+}
+.adress-info {
+  display: inline-block;
+
+  margin-right: 70px;
+}
+
+.social-media__label,
+.form-field__title {
+  margin-bottom: 20px;
+  font-size: 14px;
+
+  color: $primary-white-color;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.media-list {
+  display: flex;
+}
+
+.media-list__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+.media-list__item {
+  margin-right: 10px;
+  &last-child {
+    margin-right: 0;
+  }
+}
+
+.media-list__icon {
+  width: 20px;
+  height: 20px;
+  fill: $primary-white-color;
+}
+.form-subscription {
+  display: flex;
+  margin-left: auto;
+  align-items: flex-end;
+}
+.form-field {
+  display: inline-block;
+  flex-direction: column;
+
+  margin-right: 12px;
+}
+.form-field__input {
+  min-width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  background-color: #2f303a;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $primary-white-color;
+}
+
+.form-field__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+.form-subscription__btn {
+  display: flex;
+  align-items: center;
+}
+.form-subscription__icon {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+}
