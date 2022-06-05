@@ -1,6 +1,7 @@
 footer {
   background-color: #2f303a;
   padding: 60px 0;
+  text-align: center;
 }
 footer .logo {
   display: inline-block;
@@ -20,7 +21,7 @@ footer .logo {
   margin-bottom: 9px;
   color: rgba(255, 255, 255, 0.6);
   &:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 60px;
   }
 }
 
@@ -29,21 +30,12 @@ footer .logo {
   font-style: normal;
   line-height: 1.71;
   text-decoration: none;
+
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: $accent-color;
   }
-}
-
-footer .container {
-  display: flex;
-  align-items: baseline;
-}
-.adress-info {
-  display: inline-block;
-
-  margin-right: 70px;
 }
 
 .social-media__label,
@@ -59,6 +51,9 @@ footer .container {
 
 .media-list {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
 }
 
 .media-list__link {
@@ -77,6 +72,8 @@ footer .container {
 }
 .media-list__item {
   margin-right: 10px;
+  margin-bottom: 20px;
+
   &last-child {
     margin-right: 0;
   }
@@ -88,18 +85,12 @@ footer .container {
   fill: $primary-white-color;
 }
 .form-subscription {
-  display: flex;
   margin-left: auto;
   align-items: flex-end;
 }
-.form-field {
-  display: inline-block;
-  flex-direction: column;
 
-  margin-right: 12px;
-}
 .form-field__input {
-  min-width: 358px;
+  min-width: 450px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -110,6 +101,7 @@ footer .container {
   font-size: 16px;
   line-height: 1.25;
   color: $primary-white-color;
+  margin-bottom: 20px;
 }
 
 .form-field__label {
@@ -121,9 +113,13 @@ footer .container {
 .form-subscription__btn {
   display: flex;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .form-subscription__icon {
   margin-left: 10px;
   width: 24px;
   height: 24px;
+  display: flex;
+  align-items: center;
 }

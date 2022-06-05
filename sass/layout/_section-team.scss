@@ -1,10 +1,7 @@
 .team {
   background-color: #f5f4fa;
 }
-.team-list {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .team-list__name {
   margin-bottom: 10px;
 
@@ -21,7 +18,7 @@
   margin-bottom: 16px;
 }
 .team-list__item {
-  width: 270px;
+  width: 450px;
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
   background-color: $primary-white-color;
