@@ -1,6 +1,6 @@
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-color: #c4c4c4;
@@ -10,17 +10,17 @@
   background-position: center;
   background-size: cover;
   text-align: center;
-  padding: 200px 0;
+  padding: 118px 0;
 }
 
 .hero__label {
-  width: 696px;
+  width: 360px;
   margin-bottom: 30px;
 
   color: $primary-white-color;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
