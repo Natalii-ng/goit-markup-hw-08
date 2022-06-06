@@ -531,6 +531,7 @@ body {
 @media screen and (min-width: 480px) {
   .clients-list {
     margin: -30px;
+    padding-left: 15px;
   }
 }
 
@@ -896,10 +897,15 @@ footer .logo {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 767px) {
+  .portfolio-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .portfolio-list__item {
@@ -961,14 +967,9 @@ footer .logo {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-@media screen and (max-width: 767px) {
-  .project-list__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .project-list__item {
+    width: 354px;
     width: calc((100%-4 * 15px) / 2);
     margin: 15px;
   }
@@ -976,7 +977,13 @@ footer .logo {
 
 @media screen and (min-width: 1200px) {
   .project-list__item {
-    width: 33.3%;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .project-list__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
