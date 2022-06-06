@@ -1,7 +1,9 @@
 footer {
   background-color: #2f303a;
   padding: 60px 0;
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 footer .logo {
   display: inline-block;
@@ -51,9 +53,11 @@ footer .logo {
 
 .media-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
 }
 
 .media-list__link {
@@ -73,10 +77,12 @@ footer .logo {
 
 .media-list__item {
   margin-right: 10px;
-  margin-bottom: 20px;
 
   &last-child {
     margin-right: 0;
+  }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
   }
 }
 
@@ -88,8 +94,18 @@ footer .logo {
 .form-subscription {
   margin-left: auto;
   align-items: flex-end;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
+.form-field {
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    flex-direction: column;
 
+    margin-right: 12px;
+  }
+}
 .form-field__input {
   min-width: 450px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -103,8 +119,43 @@ footer .logo {
   line-height: 1.25;
   color: $primary-white-color;
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    min-width: 358px;
+    margin-bottom: 0;
+  }
+}
+.tablet {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    margin: 0 76px;
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+    }
+  }
+}
+.social-media {
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+  }
 }
 
+footer .container {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+.adress-info {
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+
+    margin-right: 70px;
+  }
+}
 .form-field__label {
   margin-bottom: 4px;
   font-size: 12px;
@@ -116,11 +167,12 @@ footer .logo {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+  }
 }
 .form-subscription__icon {
   margin-left: 10px;
   width: 24px;
   height: 24px;
-  display: flex;
-  align-items: center;
 }
