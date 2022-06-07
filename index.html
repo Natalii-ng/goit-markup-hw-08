@@ -15,6 +15,16 @@
         <div class="container container--allocation">
         <nav class="nav"> 
             <a class="logo" href="./index.html"><span class="logo--accent">Web</span>Studio</a>
+            <button type="button" class="nav-btn is-open">
+                <svg widht="40px" height="40px" 
+                aria-label="Перключатель мобильного меню">
+                    <use class="icon-cross" href="./images/symbol-defs-mob.svg#icon-close_40px"></use>
+                    <use class="icon-menu" href="./images/symbol-defs-mob.svg#icon-menu_40px"></use>
+                </svg>
+            </button>
+            <div class="menu-container">
+
+            </div>
         <ul class="site-nav site-nav--main list">
             <li class="site-nav__item site-nav__item--main"><a class="site-nav__link site-nav__link--main site-nav__link--current link" href="./index.html">Студия</a></li>
             <li class="site-nav__item site-nav__item--main"><a class="site-nav__link site-nav__link--main  link" href="./portfolio.html">Портфолио</a></li>
@@ -114,7 +124,14 @@
             <h2>Наша команда</h2>
             <ul class="team-list list">
                 <li class="team-list__item">                
-                    <img class="team-list__icon" src="./images/img-4.jpg" alt="Игорь Демьяненко" width="270"/>
+                    <img 
+                    srcset="
+                    ./images/img-4.jpg 270w,
+                    ./images/img-44-354.jpg 354w,
+                    ./images/img-40-450.jpg 450w,
+                    "
+                    class="team-list__icon" src="./images/img-4.jpg" alt="Игорь Демьяненко"
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw">
                     <h3 class="team-list__name">Игорь Демьяненко</h3>
                     <p class="team-list__label">Product Designer</p>
                     <ul class="social-list list">
@@ -141,7 +158,14 @@
                     </ul>
                 </li>
                 <li class="team-list__item">
-                    <img class="team-list__icon" src="./images/img-5.jpg" alt="Ольга Репина" width="270"/>
+                    <img 
+                    srcset="
+                    ./images/img-5.jpg 270w,
+                    ./images/img-45-354.jpg 354w,
+                    ./images/img-41-450.jpg 450w,
+                    "
+                    class="team-list__icon" src="./images/img-5.jpg" alt="Ольга Репина"
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw">
                     <h3 class="team-list__name">Ольга Репина</h3>
                     <p class="team-list__label">Frontend Developer</p>
                     <ul class="social-list list">
@@ -168,7 +192,14 @@
                     </ul>
                 </li>
                 <li class="team-list__item">
-                    <img class="team-list__icon" src="./images/img-6.jpg" alt="Николай Тарасов" width="270"/>
+                    <img 
+                    srcset="
+                    ./images/img-6.jpg 270w,
+                    ./images/img-46-354.jpg 354w,
+                    ./images/img-42-450.jpg 450w,
+                    "
+                    class="team-list__icon" src="./images/img-6.jpg" alt="Николай Тарасов"
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw">
                     <h3 class="team-list__name">Николай Тарасов</h3>
                     <p class="team-list__label">Marketing</p>
                     <ul class="social-list list">
@@ -195,7 +226,14 @@
                     </ul>
                 </li>
                 <li class="team-list__item">
-                    <img class="team-list__icon" src="./images/img-7.jpg" alt="Михаил Ермаков" width="270"/>
+                    <img 
+                    srcset="
+                    ./images/img-7.jpg 270w,
+                    ./images/img-47-354.jpg 354w,
+                    ./images/img-43-450.jpg 450w,
+                    "
+                    class="team-list__icon" src="./images/img-7.jpg" alt="Михаил Ермаков"
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw">
                     <h3 class="team-list__name">Михаил Ермаков</h3>
                     <p class="team-list__label">UI Designer</p>
                     <ul class="social-list list">
@@ -363,5 +401,6 @@
                 </div>
             </div>
             <script src="./js/modal.js"></script>
+            <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

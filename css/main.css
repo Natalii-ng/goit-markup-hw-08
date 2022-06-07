@@ -111,6 +111,21 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-height: 80px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .nav {
     display: -webkit-box;
@@ -122,6 +137,41 @@ body {
   }
 }
 
+.nav-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-btn {
+    display: none;
+  }
+}
+
+.nav-btn .icon-cross {
+  display: none;
+}
+
+.nav-btn.is-open .icon-cross {
+  display: block;
+}
+
+.nav-btn.is-open .icon-menu {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav--main {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .site-nav--main {
     display: -webkit-box;
@@ -130,6 +180,12 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav--allocation {
+    display: none;
   }
 }
 
@@ -249,6 +305,20 @@ body {
   background-size: cover;
   text-align: center;
   padding: 118px 0;
+  background-size: cover;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+    padding: 200px 0;
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/Header-mob.jpg);
+  }
 }
 
 .hero__label {
@@ -260,6 +330,13 @@ body {
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__label {
+    width: 696px;
+    font-size: 44px;
+  }
 }
 
 /* button */

@@ -11,6 +11,20 @@
   background-size: cover;
   text-align: center;
   padding: 118px 0;
+  background-size: cover;
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    padding: 200px 0;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/Header-mob.jpg);
+  }
 }
 
 .hero__label {
@@ -23,6 +37,10 @@
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    font-size: 44px;
+  }
 }
 /* button */
 .button {
