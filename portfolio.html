@@ -15,11 +15,53 @@
     <div class="container container--allocation">
         <nav class="nav">
             <a class="logo" href="./index.html"><span class="logo--accent">Web</span>Studio</a>
+            <button type="button" class="nav-btn" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+                <svg widht="40px" height="40px" aria-label="Перключатель мобильного меню">
+                    <use class="icon-cross" href="./images/symbol-defs-mob.svg#icon-close_40px"></use>
+                    <use class="icon-menu" href="./images/symbol-defs-mob.svg#icon-menu_40px"></use>
+                </svg>
+            </button>
+            <div class="menu-container" id="menu-container" data-menu>
+
+                <ul class="mobile-nav mobile-nav--main list">
+                    <li class="mobile-nav__item mobile-nav__item--main"><a
+                            class="mobile-nav__link mobile-nav__link--main link"
+                            href="./index.html">Студия</a></li>
+                    <li class="mobile-nav__item mobile-nav__item--main"><a
+                            class="mobile-nav__link mobile-nav__link--main  mobile-nav__link--current link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="mobile-nav__item mobile-nav__item--main"><a
+                            class="mobile-nav__link  mobile-nav__link--main link" href="">Контакты</a></li>
+                </ul>
+                <ul class="mobile-nav list mobile-nav--allocation ">
+                    <li class="mobile-nav__item"><a
+                            class="mobile-nav__link mobile-nav__link--secondary mobile-nav__link--accent link"
+                            href="tel:+380961111111">
+                            +38 096 111 11 11</a></li>
+                    <li class="mobile-nav__item"><a class="mobile-nav__link mobile-nav__link--secondary link"
+                            href="mailto:info@devstudio.com">
+                            info@devstudio.com</a></li>
+
+                </ul>
+                <ul class="mobile-nav mobile-nav--social list">
+                    <li class="mobile-nav__item mobile-nav__item--social"><a
+                            class="mobile-nav__link mobile-nav__link--social link" href="./index.html">Instagram </a>
+                    </li>
+                    <li class="mobile-nav__item mobile-nav__item--social"><a
+                            class="mobile-nav__link mobile-nav__link--social  link" href="./portfolio.html">Twitter</a>
+                    </li>
+                    <li class="mobile-nav__item mobile-nav__item--social"><a
+                            class="mobile-nav__link  mobile-nav__link--social link" href="">Facebook</a></li>
+                    <li class="mobile-nav__item mobile-nav__item--social"><a
+                            class="mobile-nav__link  mobile-nav__link--social link" href="">LinkedIn</a></li>
+                </ul>
+
+            </div>
             <ul class="site-nav site-nav--main list">
                 <li class="site-nav__item site-nav__item--main"><a
-                        class="site-nav__link site-nav__link--main link"
+                        class="site-nav__link site-nav__link--main site-nav__link--current link"
                         href="./index.html">Студия</a></li>
-                <li class="site-nav__item site-nav__item--main"><a class="site-nav__link site-nav__link--main site-nav__link--current  link"
+                <li class="site-nav__item site-nav__item--main"><a class="site-nav__link site-nav__link--main  link"
                         href="./portfolio.html">Портфолио</a></li>
                 <li class="site-nav__item site-nav__item--main"><a class="site-nav__link  site-nav__link--main link"
                         href="">Контакты</a></li>
@@ -37,8 +79,8 @@
                     <svg class="site-nav__icon site-nav__icon--secondary">
                         <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                     </svg>+38 096 111 11 11</a></li>
-        </ul>
-    </div>
+                </ul>
+            </div>
 </header>
     <main>
         <section class="portfolio section">
@@ -261,5 +303,6 @@
                 </form>
             </div>
         </footer>
+        <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
