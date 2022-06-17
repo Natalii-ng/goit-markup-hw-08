@@ -39,6 +39,7 @@
 }
 header {
   position: relative;
+  border: 1px solid #ececec;
 }
 .menu-container {
   display: none;
@@ -133,6 +134,7 @@ header {
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
+    margin-top: 0;
   }
 }
 

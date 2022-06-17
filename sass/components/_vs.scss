@@ -2,6 +2,12 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
+  overflow: hidden;
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+
   @media screen and (min-width: 480px) {
     width: 480px;
   }
@@ -27,6 +33,9 @@
 }
 .section {
   padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 .section h2 {
   margin-bottom: 50px;
