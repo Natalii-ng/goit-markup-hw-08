@@ -75,9 +75,6 @@
 }
 .project-card__label {
   margin-bottom: 4px;
-  padding-left: 24px;
-  padding-right: 24px;
-  margin-top: 20px;
 
   color: $title-text-color;
   font-weight: 700;
@@ -86,13 +83,12 @@
   letter-spacing: 0.06em;
 }
 .project-card__meta {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 20px;
   font-size: 16px;
   line-height: 1.88;
 }
-
+.title {
+  padding: 20px 24px;
+}
 .project-list__item {
   border: 1px solid #eeeeee;
   background-color: $primary-white-color;

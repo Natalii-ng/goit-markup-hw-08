@@ -1201,9 +1201,6 @@ footer .logo {
 
 .project-card__label {
   margin-bottom: 4px;
-  padding-left: 24px;
-  padding-right: 24px;
-  margin-top: 20px;
   color: #212121;
   font-weight: 700;
   font-size: 18px;
@@ -1212,11 +1209,12 @@ footer .logo {
 }
 
 .project-card__meta {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 20px;
   font-size: 16px;
   line-height: 1.88;
+}
+
+.title {
+  padding: 20px 24px;
 }
 
 .project-list__item {
