@@ -2,17 +2,17 @@
   @media screen and (min-width: 480px) {
     display: flex;
     flex-wrap: wrap;
-    margin: -30px;
-    padding-left: 15px;
+    margin: -15px;
   }
 }
 .clients-list__item {
-  margin-bottom: 10px;
-  &:last-child {
-    margin-bottom: 0px;
+  &:not(:last-child) {
+    @media screen and (max-width: 479px) {
+      margin-bottom: 10px;
+    }
   }
   @media screen and (min-width: 480px) {
-    width: calc((100%-4 * 15px) / 2);
+    width: calc((100%-2 * 30px) / 2);
     margin: 15px;
   }
   @media screen and (min-width: 768px) {
