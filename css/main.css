@@ -138,7 +138,8 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    min-height: 80px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 
@@ -150,6 +151,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    min-height: 80px;
   }
 }
 
@@ -582,7 +584,6 @@ header {
 @media screen and (min-width: 768px) {
   .qualities__item {
     width: 270px;
-    width: calc((100%-4 * 15px) / 2);
     margin: 15px;
   }
 }
@@ -690,7 +691,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .team-list__item {
-    width: calc((100%-4 * 15px) / 2);
+    width: 354px;
     margin: 15px;
   }
 }
@@ -774,14 +775,21 @@ header {
 
 @media screen and (min-width: 480px) {
   .clients-list__item {
-    width: calc((100%-2 * 30px) / 2);
+    width: 210px;
     margin: 15px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .clients-list__item {
-    width: calc((100%-6 * 15px) / 3);
+    width: 226px;
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list__item {
+    width: 170px;
     margin: 15px;
   }
 }
@@ -1099,7 +1107,6 @@ footer .logo {
   display: inline-block;
   border-radius: 4px;
   padding: 6px 22px;
-  min-width: 120px;
   border: none;
   color: #212121;
   background-color: #f5f4fa;
@@ -1125,17 +1132,10 @@ footer .logo {
   color: #2196f3;
 }
 
-@media screen and (max-width: 767px) {
-  .portfolio-list__btn {
-    margin-bottom: -15px;
-  }
-}
-
 .portfolio-list__btn.portfolio-list__btn--current {
   display: inline-block;
   border-radius: 4px;
   padding: 6px 22px;
-  min-width: 73px;
   border: none;
   color: #ffffff;
   background-color: #2196f3;
@@ -1152,11 +1152,12 @@ footer .logo {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: -15px;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .portfolio-list {
+    margin-bottom: 30px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1177,6 +1178,10 @@ footer .logo {
   }
 }
 
+.project-list {
+  margin-top: 40px;
+}
+
 @media screen and (min-width: 768px) {
   .project-list {
     display: -webkit-box;
@@ -1184,7 +1189,7 @@ footer .logo {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -30px;
+    margin: -15px;
   }
 }
 
@@ -1228,14 +1233,14 @@ footer .logo {
 
 @media screen and (min-width: 768px) {
   .project-list__item {
-    width: calc((100%-2 * 30px) / 2);
+    width: 354px;
     margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .project-list__item {
-    width: 30%;
+    width: 370px;
   }
 }
 
@@ -1304,6 +1309,21 @@ footer .logo {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 320px) {
+  .modal {
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 93px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .modal {
     position: absolute;
@@ -1311,6 +1331,12 @@ footer .logo {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+    min-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
     min-width: 528px;
     min-height: 581px;
   }
@@ -1338,6 +1364,13 @@ footer .logo {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .modal__button {
+    top: 101px;
+    right: 23px;
+  }
 }
 
 .modal__button:hover, .modal__button:focus {
