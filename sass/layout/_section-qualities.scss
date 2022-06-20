@@ -35,8 +35,8 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin: -30px;
-    align-items: center;
+    margin: -15px;
+
     justify-content: center;
   }
 }
@@ -48,11 +48,11 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 270px;
+    width: 354px;
 
     margin: 15px;
   }
   @media screen and (min-width: 1200px) {
-    width: 22%;
+    width: 270px;
   }
 }

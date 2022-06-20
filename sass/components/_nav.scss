@@ -39,6 +39,7 @@
 .nav-btn.is-open .icon-menu {
   display: none;
 }
+
 header {
   position: relative;
   border: 1px solid #ececec;
@@ -188,13 +189,16 @@ header {
   }
 }
 .site-nav__link--secondary {
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
     margin-bottom: 10px;
   }
 }
 .site-nav__link--main {
   @media screen and (min-width: 768px) {
     padding: 32px 0;
+    @media screen and (min-width: 1200px) {
+      padding: 0;
+    }
   }
 }
 .site-nav__link {
