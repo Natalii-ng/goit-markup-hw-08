@@ -204,6 +204,7 @@ header {
   height: 796px;
   background-color: #ffffff;
   padding: 48px 40px;
+  z-index: 10;
 }
 
 .menu-container.is-open {
